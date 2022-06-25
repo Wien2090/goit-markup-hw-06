@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework №5.2</title>
+    <title>Homework №6.3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,9 +32,7 @@
         <nav>
           <ul class="header-nav-link list">
             <li class="header-nav-item">
-      
-                <a href="#" class="nav-link current link">Студия</a>
-                
+              <a href="#" class="nav-link current link">Студия</a>
             </li>
             <li class="header-nav-item">
               <a href="./portfolio.html" class="nav-link link">Портфолио</a>
@@ -74,7 +72,9 @@
       <section class="background-img hero">
         <div class="container">
           <h1 class="studio-ha">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="studio-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="studio-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -507,17 +507,77 @@
             </li>
           </ul>
         </div>
+        <!--старт подпишитесь на рассылку -->
+        <div>
+          <h2 class="footer-goin">Подпишитесь на рассылку</h2>
+        </div>
+        <!-- Шініш подпишитесь на рассылку -->
       </div>
       <!-- КІНЕЦЬ СОЦСЕТИ -->
     </footer>
     <!-- МОДАЛЬНЕ ВИКНО -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-icon" width="18" height="18">
             <use xlink:href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <!-- Старт заполенения модальное окно -->
+        <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#">
+          <ul class="list">
+            <li>
+              <label for="name" class="label">Имя</label>
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  name="name"
+                  class="modal-inputmini"
+                  required
+                />
+                <svg width="18" height="18" class="modal-img">
+                  <use xlink:href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <label for="tel" class="label">Телефон</label>
+              <div class="input-wrap">
+                <input type="tel" name="tel" class="modal-inputmini" required />
+                <svg width="18" height="18" class="modal-img">
+                  <use xlink:href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <label for="email" class="label">Почта</label>
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  name="email"
+                  class="modal-inputmini"
+                  required
+                />
+                <svg width="18" height="18" class="modal-img">
+                  <use xlink:href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <label for="coment" class="label">Комментарий</label>
+              <textarea name="coment" id="coment" class="modal-coment">
+Введите текст</textarea
+              >
+            </li>
+          </ul>
+          <p class="dogovor">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="dogovorplas">Условия договора</a>
+          </p>
+          <button type="submit" class="modal-button-go">Отправить</button>
+        </form>
+        <!-- Фініш заполнение модальное окно -->
       </div>
     </div>
     <script src="./modal.js"></script>
