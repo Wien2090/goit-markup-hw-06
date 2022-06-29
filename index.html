@@ -508,6 +508,7 @@
           </ul>
         </div>
         <!--старт подпишитесь на рассылку -->
+      
         <div class="subscribe">
           <h2 class="subscribe-p">Подпишитесь на рассылку</h2>
           <div class="subscribe-flex">
@@ -518,13 +519,12 @@
               class="subscribe-email"
               placeholder="E-mail"
             />
-
-          
-              <button type="submit" class="subscribe-button">Подписаться <svg width="24" height="24" class="subscribe-img" >
+        <button type="submit" class="subscribe-button">
+                Подписаться <svg width="24" height="24" class="subscribe-img">
                   <use
                     xlink:href="./images/icons.svg#icon-icontelegram"
-                  ></use> </button>
-     
+                  ></use></svg>
+        </button>
           </form>
           </div>
         </div>
@@ -546,21 +546,22 @@
         <form action="#">
           <ul class="because-input list">
             <li>
-              <label for="name" class="label">Имя</label>
+              <label for="onename" class="label"> Имя </label>
               <div class="input-wrap">
-                <input type="text" name="name" class="modal-inputmini" required
-                placeholder=" " / >
+                <input type="text" name="onename" id="onename" class="modal-inputmini" required
+                placeholder=" " />
                 <svg width="18" height="18" class="modal-img">
                   <use
                     xlink:href="./images/icons.svg#icon-person-black-18"
                   ></use>
                 </svg>
               </div>
+            
             </li>
             <li>
-              <label for="tel" class="label">Телефон</label>
+              <label for="tel" class="label"> Телефон </label>
               <div class="input-wrap">
-                <input type="tel" name="tel" class="modal-inputmini" required />
+                <input type="tel" name="tel" id="tel" class="modal-inputmini" required />
                 <svg width="18" height="18" class="modal-img">
                   <use
                     xlink:href="./images/icons.svg#icon-phone-black-18"
@@ -569,11 +570,11 @@
               </div>
             </li>
             <li>
-              <label for="email" class="label">Почта</label>
+              <label for="email" class="label"> Почта </label>
               <div class="input-wrap">
                 <input
                   type="email"
-                  name="email"
+                  name="email" id="email"
                   class="modal-inputmini"
                   required
                 />
@@ -594,6 +595,7 @@
               ></textarea>
             </li>
           </ul>
+          
           <div class="modal-field">
             <input
               type="checkbox"
@@ -602,8 +604,7 @@
               class="input-check visually-hidden"
             />
             <label for="privat" class="check-text"
-              >&nbsp Соглашаюсь с рассылкой и принимаю &nbsp
-              <a href="#" class="dogovorplas"> Условия договора</a></label
+              >&nbsp Соглашаюсь с рассылкой и принимаю &nbsp<a href="#" class="dogovorplas">Условия договора</a></label
             >
           </div>
           <button type="submit" class="modal-button-go">Отправить</button>
