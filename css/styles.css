@@ -1001,6 +1001,12 @@ address {
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
+
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-button {
